@@ -7,19 +7,6 @@ A domain-specific, full-stack conversational AI system designed exclusively for 
 
 ---
 
-## 📌 Project Overview
-
-| Detail | Info |
-|--------|------|
-| University | University of Central Punjab (UCP) |
-| Course | Artificial Intelligence Lab (AL311-F25-BS-RI-F23-A) |
-| Instructor | **Engr. Fazeel Abbas** |
-| Session | Fall 2025 — BS Robotics & Intelligent Systems |
-| Submission | January 21, 2026 |
-| Authors | Ali Ahmar Awan (L1F23BSRI0013), Muhammad Mamoon (L1F23BSRI0014) |
-
----
-
 ## ✨ Features
 
 - 🎌 **Domain-Specific AI** — Exclusively handles anime & manga topics
@@ -270,14 +257,9 @@ Licensed under **MIT License** — open for academic and educational use.
 
 ## 👥 Authors
 
-| Name | Reg. No |
-|------|---------|
-| Ali Ahmar Awan | L1F23BSRI0013 |
-| Muhammad Mamoon | L1F23BSRI0014 |
+Muhammad Mamoon
 
 ## 🙏 Acknowledgements
 
-- Course Instructor: **Engr. Fazeel Abbas**
-- AI Lab — University of Central Punjab — Fall 2025
 - Powered by [Google Gemini](https://ai.google.dev/)
 - Data sourced from [MyAnimeList](https://myanimelist.net/)
