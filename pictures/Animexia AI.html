@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animexia AI - Your Anime Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-glow"></div>
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Animexia AI Logo" class="logo-image">
+                    <div class="header-text">
+                        <h1>Animexia AI</h1>
+                        <p class="tagline">Your Personal Anime & Manga Expert</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </button>
+                    <button class="clear-btn" id="clearBtn" title="Clear conversation">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container" id="chatContainer">
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcomeMessage">
+                <div class="welcome-avatar-container">
+                    <div class="avatar-glow"></div>
+                    <img src="assets/logo.png" alt="Animexia" class="welcome-avatar-img">
+                </div>
+                <h2 class="glitch-text" data-text="Konnichiwa!">Konnichiwa!</h2>
+                <h3>Welcome to Animexia AI! 🌸</h3>
+                <p class="welcome-description">I'm your anime and manga expert powered by advanced AI! Ask me anything about:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📺</div>
+                        <span>Anime Recommendations</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📚</div>
+                        <span>Manga Discussions</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⭐</div>
+                        <span>Reviews & Ratings</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎭</div>
+                        <span>Character Analysis</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎬</div>
+                        <span>Studio Info</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔥</div>
+                        <span>Trending Anime</span>
+                    </div>
+                </div>
+                
+                <p class="welcome-cta">✨ Try asking me something!</p>
+                
+                <div class="suggestions">
+                    <button class="suggestion-btn glow-btn" data-msg="Recommend me an epic action anime with great fight scenes">
+                        <span class="btn-icon">⚔️</span>
+                        <span>Action Anime</span>
+                    </button>
+                    <button class="suggestion-btn glow-btn" data-msg="What are the best romance manga I should read?">
+                        <span class="btn-icon">💕</span>
+                        <span>Romance Manga</span>
+                    </button>
+                    <button class="suggestion-btn glow-btn" data-msg="Tell me about Attack on Titan without spoilers">
+                        <span class="btn-icon">🗡️</span>
+                        <span>Attack on Titan</span>
+                    </button>
+                    <button class="suggestion-btn glow-btn" data-msg="What's the best isekai anime to watch?">
+                        <span class="btn-icon">🌍</span>
+                        <span>Isekai Series</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator-container" id="typingIndicator" style="display: none;">
+            <div class="typing-indicator">
+                <div class="typing-avatar">
+                    <img src="assets/logo.png" alt="Animexia">
+                </div>
+                <div class="typing-bubbles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <button class="attach-btn" id="attachBtn" title="Coming soon!">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+                    </svg>
+                </button>
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Ask about anime, manga, characters..." 
+                    autocomplete="off"
+                />
+                <button id="sendBtn" class="send-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-info">
+                <span class="status-indicator" id="statusIndicator">● Connected</span>
+                <span class="powered-by">Powered by Animexia AI</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
