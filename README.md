@@ -146,7 +146,13 @@ animexia-ai/
 ├── docs/
 │   ├── AI_Lab_Project_Report.pdf    ← Full project report (22 pages)
 │   └── AI_Lab_Project_Proposal.pdf  ← Original project proposal
-│
+├── pictures/
+│   ├── UI_Frontend.png 
+│   └── System_Output1.png 
+│   └── System_Output2.png
+│   └── Connstraint_Satisfaction_Result.png 
+├── demo/
+│   ├── AnimexiaAI_Demonstration.mp4 
 ├── README.md
 └── .gitignore
 ```
